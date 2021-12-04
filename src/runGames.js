@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 import readlineSync from 'readline-sync';
 import { hello } from './index.js';
 
@@ -14,6 +15,7 @@ const runGame = (createRound, description) => {
     console.log(quest);
     const userAnswer = readlineSync.question('Your answer:');
 
+    // eslint-disable-next-line eqeqeq
     if (correctAnswer != userAnswer) {
       return console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}". \n Let's try again, ${userName}!`);
     }
