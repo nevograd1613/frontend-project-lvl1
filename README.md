@@ -11,4 +11,4 @@
 4. "Поиск числа в прогрессии"
 5. "Простое число"
 Для запуска игры "Четное не четное" наберите в терминале команду "brain-even"
-https://asciinema.org/a/vTIEc9cmPoeRV4NRwFg0jZIUw
+[![asciicast](https://asciinema.org/a/vTIEc9cmPoeRV4NRwFg0jZIUw.svg)](https://asciinema.org/a/vTIEc9cmPoeRV4NRwFg0jZIUw)
