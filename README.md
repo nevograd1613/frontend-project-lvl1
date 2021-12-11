@@ -1,6 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/nevograd1613/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/nevograd1613/frontend-project-lvl1/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/cd4771e438ab221c72b3/maintainability)](https://codeclimate.com/github/nevograd1613/frontend-project-lvl1/maintainability)
 ![example workflow](https://github.com/nevograd1613/frontend-project-lvl1/actions/workflows/github-actions-demo.yml/badge.svg)
 Для установки проекта скопируйте репозиторий: git@github.com:nevograd1613/frontend-project-lvl1.git
 Проведите установку, набрав в терминале команду: "make install".
