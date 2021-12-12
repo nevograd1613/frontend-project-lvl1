@@ -1,10 +1,10 @@
-import { getRandomInt } from '../index.js';
-import runGame from '../runGames.js';
+import randomNum from '../randomNum.js';
+import runGame from '../index.js';
 
-const createProgression = (progressionLength, randomNum) => {
-  let firstElem = randomNum;
+const createProgression = (progressionLength, randomNumber) => {
+  let firstElem = randomNumber;
   const newProgression = [];
-  const increaseProgression = getRandomInt(0, 5);
+  const increaseProgression = randomNum(0, 5);
   for (let i = 0; i < progressionLength; i += 1) {
     newProgression.push(firstElem += increaseProgression);
   }
@@ -12,11 +12,11 @@ const createProgression = (progressionLength, randomNum) => {
 };
 
 const createRound = () => {
-  const randomNum = getRandomInt(0, 100);
-  const progressionLength = getRandomInt(5, 10);
-  const randomElem = getRandomInt(0, progressionLength);
+  const randomNumber = randomNum(0, 100);
+  const progressionLength = randomNum(5, 10);
+  const randomElem = randomNum(0, progressionLength);
 
-  const progressionCollection = createProgression(progressionLength, randomNum);
+  const progressionCollection = createProgression(progressionLength, randomNumber);
   const trueAnswer = progressionCollection[randomElem];
   progressionCollection[randomElem] = '..';
   const question = `Question: ${progressionCollection.join(' ')}`;

@@ -1,5 +1,5 @@
-import { getRandomInt } from '../index.js';
-import runGame from '../runGames.js';
+import runGame from '../index.js';
+import randomNum from '../randomNum.js';
 
 const getTrueAnswer = (a, operation, b) => {
   switch (operation) {
@@ -17,9 +17,9 @@ const getTrueAnswer = (a, operation, b) => {
 const createRound = () => {
   const operand = ['+', '-', '*'];
 
-  const randomOperand = operand[getRandomInt(0, operand.length)];
-  const firstNum = getRandomInt(10, 40);
-  const secondNum = getRandomInt(10, 40);
+  const randomOperand = operand[randomNum(0, 2)];
+  const firstNum = randomNum(1, 10);
+  const secondNum = randomNum(1, 10);
   const question = `Question: ${firstNum} ${randomOperand} ${secondNum}`;
   const trueAnswer = getTrueAnswer(firstNum, randomOperand, secondNum);
 

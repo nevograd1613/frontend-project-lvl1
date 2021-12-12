@@ -1,5 +1,5 @@
-import { getRandomInt } from '../index.js';
-import runGame from '../runGames.js';
+import randomNum from '../randomNum.js';
+import runGame from '../index.js';
 
 const getTrueAnswer = (a, b) => {
   if (b) {
@@ -9,8 +9,8 @@ const getTrueAnswer = (a, b) => {
 };
 
 const createRound = () => {
-  const firstNum = getRandomInt(0, 50);
-  const secondNum = getRandomInt(0, 50);
+  const firstNum = randomNum(0, 50);
+  const secondNum = randomNum(0, 50);
   const trueAnswer = getTrueAnswer(firstNum, secondNum);
   const question = `Question: ${firstNum} ${secondNum}`;
   return [trueAnswer, question];

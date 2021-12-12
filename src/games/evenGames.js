@@ -1,14 +1,14 @@
-import { getRandomInt } from '../index.js';
-import runGame from '../runGames.js';
+import randomNum from '../randomNum.js';
+import runGame from '../index.js';
 
 const even = (number) => number % 2 === 0;
 
 const getTrueAnswer = (num) => (even(num) ? 'yes' : 'no');
 
 const createRound = () => {
-  const randomNum = getRandomInt(0, 100);
-  const trueAnswer = getTrueAnswer(randomNum);
-  const question = `Question: ${randomNum}`;
+  const randomNumber = randomNum(0, 100);
+  const trueAnswer = getTrueAnswer(randomNumber);
+  const question = `Question: ${randomNumber}`;
 
   return [trueAnswer, question];
 };
