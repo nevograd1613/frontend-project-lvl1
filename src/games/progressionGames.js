@@ -1,5 +1,5 @@
 import randomNum from '../randomNum.js';
-import runGame from '../index.js';
+import playGame from '../index.js';
 
 const createProgression = (progressionLength, randomNumber) => {
   let firstElem = randomNumber;
@@ -26,7 +26,7 @@ const createRound = () => {
 
 const startProgressionGame = () => {
   const description = 'What number is missing in the progression?';
-  runGame(createRound, description);
+  playGame(createRound, description);
 };
 
 export default startProgressionGame;

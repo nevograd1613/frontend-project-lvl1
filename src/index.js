@@ -1,27 +1,23 @@
 import readlineSync from 'readline-sync';
-
-const hello = (description) => {
+/* eslint-disable consistent-return */
+const playGame = (createRound, description) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}`);
-  console.log(description);
-  return userName;
-};
+  console.log('${description}');
 
 const numberOfRounds = 3;
-/* eslint-disable consistent-return */
-const runGame = (createRound, description) => {
-  const userName = hello(description);
+
   for (let i = 0; i < numberOfRounds; i += 1) {
     const [correctAnswer, quest] = createRound();
-    console.log(quest);
+    console.log(`Question: ${quest}`);
     const userAnswer = readlineSync.question('Your answer:');
-    // eslint-disable-next-line eqeqeq
-    if (userAnswer != correctAnswer) {
-      return console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}". \n Let's try again, ${userName}!`);
+  
+    if (userAnswer !== correctAnswer) {
+      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}". \n Let's try again, ${userName}!`);
     }
     console.log('Correct!');
   }
   console.log(`Congratulations, ${userName}!`);
 };
-export default runGame;
+export default playGame;

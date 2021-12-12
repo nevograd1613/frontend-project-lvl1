@@ -1,4 +1,4 @@
-import runGame from '../index.js';
+import playGame from '../index.js';
 import randomNum from '../randomNum.js';
 
 const getTrueAnswer = (a, operation, b) => {
@@ -28,7 +28,7 @@ const createRound = () => {
 
 const startCalcGame = () => {
   const description = 'What is the result of the expression?';
-  runGame(createRound, description);
+  playGame(createRound, description);
 };
 
 export default startCalcGame;
