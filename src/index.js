@@ -1,11 +1,12 @@
 import readlineSync from 'readline-sync';
 /* eslint-disable consistent-return */
-const numberOfRounds = 3;
 const playGame = (createRound, description) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}`);
   console.log(description);
+
+  const numberOfRounds = 3;
 
   for (let i = 0; i < numberOfRounds; i += 1) {
     const [correctAnswer, quest] = createRound();
