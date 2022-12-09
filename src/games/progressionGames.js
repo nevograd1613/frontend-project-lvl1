@@ -11,13 +11,15 @@ const createProgression = (progressionLength, randomNumber) => {
   return newProgression;
 };
 
+const getTrueAnswer = (answer) => (answer ? `${answer}` : false);
+
 const createRound = () => {
   const randomNumber = randomNum(0, 100);
   const progressionLength = randomNum(5, 10);
   const randomElem = randomNum(0, progressionLength);
 
   const progressionCollection = createProgression(progressionLength, randomNumber);
-  const trueAnswer = progressionCollection[randomElem];
+  const trueAnswer = getTrueAnswer(progressionCollection[randomElem]);
   progressionCollection[randomElem] = '..';
   const question = `Question: ${progressionCollection.join(' ')}`;
 
