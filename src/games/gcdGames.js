@@ -1,17 +1,18 @@
 import randomNum from '../randomNum.js';
 import playGame from '../index.js';
 
-const getTrueAnswer = (a, b) => {
-  if (b) {
-    return getTrueAnswer(b, a % b);
-  }
-  return Math.abs(a);
-};
+const getTrueAnswer = (answer) => (answer ? `${answer}` : false);
 
 const createRound = () => {
   const firstNum = randomNum(0, 50);
   const secondNum = randomNum(0, 50);
-  const trueAnswer = getTrueAnswer(firstNum, secondNum);
+  const correctAnswer = (a, b) => {
+    if (b) {
+      return correctAnswer(b, a % b);
+    }
+    return Math.abs(a);
+  };
+  const trueAnswer = getTrueAnswer(correctAnswer(firstNum, secondNum));
   const question = `Question: ${firstNum} ${secondNum}`;
   return [trueAnswer, question];
 };
