@@ -1,18 +1,7 @@
 import playGame from '../index.js';
 import randomNum from '../randomNum.js';
 
-const getTrueAnswer = (a, operation, b) => {
-  switch (operation) {
-    case '+':
-      return a + b;
-    case '-':
-      return a - b;
-    case '*':
-      return a * b;
-    default:
-      return false;
-  }
-};
+const getTrueAnswer = (answer) => (answer ? `${answer}` : false);
 
 const createRound = () => {
   const operand = ['+', '-', '*'];
@@ -21,7 +10,19 @@ const createRound = () => {
   const firstNum = randomNum(1, 10);
   const secondNum = randomNum(1, 10);
   const question = `Question: ${firstNum} ${randomOperand} ${secondNum}`;
-  const trueAnswer = getTrueAnswer(firstNum, randomOperand, secondNum);
+  const correctAnswer = (a, operation, b) => {
+    switch (operation) {
+      case '+':
+        return a + b;
+      case '-':
+        return a - b;
+      case '*':
+        return a * b;
+      default:
+        return false;
+    }
+  };
+  const trueAnswer = getTrueAnswer(correctAnswer(firstNum, randomOperand, secondNum));
 
   return [trueAnswer, question];
 };
