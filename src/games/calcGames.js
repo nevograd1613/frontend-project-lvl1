@@ -14,9 +14,9 @@ const getTrueAnswer = (a, operation, b) => {
   }
 };
 
-const createRound = () => {
-  const operand = ['+', '-', '*'];
+const operand = ['+', '-', '*'];
 
+const createRound = () => {
   const randomOperand = operand[randomNum(0, 2)];
   const firstNum = randomNum(1, 10);
   const secondNum = randomNum(1, 10);
