@@ -5,7 +5,7 @@ const createProgression = (progressionLength, randomNumber) => {
   let firstElem = randomNumber;
   const newProgression = [];
   const increaseProgression = randomNum(0, 5);
-  for (let i = 0; i < progressionLength; i += 1) {
+  for (let i = 0; i < progressionLength - 1; i += 1) {
     newProgression.push(firstElem += increaseProgression);
   }
   return newProgression;
@@ -16,7 +16,7 @@ const getTrueAnswer = (answer) => (answer ? `${answer}` : false);
 const createRound = () => {
   const randomNumber = randomNum(0, 100);
   const progressionLength = randomNum(5, 10);
-  const randomElem = randomNum(0, progressionLength);
+  const randomElem = randomNum(0, progressionLength - 1);
 
   const progressionCollection = createProgression(progressionLength, randomNumber);
   const trueAnswer = getTrueAnswer(progressionCollection[randomElem]);
