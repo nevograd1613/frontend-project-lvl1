@@ -15,28 +15,28 @@
 "Четное не четное"
 ========================
 Для запуска игры "Четное не четное" наберите в терминале команду "make brain-even"
-[![asciicast](https://asciinema.org/a/vTIEc9cmPoeRV4NRwFg0jZIUw.svg)](https://asciinema.org/a/vTIEc9cmPoeRV4NRwFg0jZIUw)
+[![asciicast](https://asciinema.org/a/0qRUhB5L5POZ99ymojAQqdgmq.svg)](https://asciinema.org/a/0qRUhB5L5POZ99ymojAQqdgmq)
 
 "Калькулятор"
 ========================
 Для запуска игры "Калькулятор" наберите в терминале команду "make brain-calc"
 
-[![asciicast](https://asciinema.org/a/V0POBI3wjQPaCFzxD1O6LOw1n.svg)](https://asciinema.org/a/V0POBI3wjQPaCFzxD1O6LOw1n)
+[![asciicast](https://asciinema.org/a/CO0hVyjMPwdMKhkD06NxOzWub.svg)](https://asciinema.org/a/CO0hVyjMPwdMKhkD06NxOzWub)
 
 "Наибольший общий делитель"
 ========================
 Для запуска игры "Наибольший общий делитель" наберите в терминале команду "make brain-gcd"
 
-[![asciicast](https://asciinema.org/a/vZmEujUh1uWnLwJmeTe2ad2lR.svg)](https://asciinema.org/a/vZmEujUh1uWnLwJmeTe2ad2lR)
+[![asciicast](https://asciinema.org/a/sJyuKDEq15oDcOkERW1PH7pVb.svg)](https://asciinema.org/a/sJyuKDEq15oDcOkERW1PH7pVb)
 
 "Поиск числа в прогрессии"
 ========================
 Для запуска игры "Поиск числа в прогрессии" наберите в терминале команду "make brain-progrssion"
 
-[![asciicast](https://asciinema.org/a/mtQzUOtDgt6Cpgtqpiq24Bgma.svg)](https://asciinema.org/a/mtQzUOtDgt6Cpgtqpiq24Bgma)
+[![asciicast](https://asciinema.org/a/WGveYxwPIRcakaiQOLlAZ6x2y.svg)](https://asciinema.org/a/WGveYxwPIRcakaiQOLlAZ6x2y)
 
 "Простое число"
 ========================
 Для запуска игры "Простое число" наберите в терминале команду "make brain-prime"
 
-[![asciicast](https://asciinema.org/a/m7McvciVnYnhvvAKlS4kEe2Nv.svg)](https://asciinema.org/a/m7McvciVnYnhvvAKlS4kEe2Nv)
+[![asciicast](https://asciinema.org/a/N7ZxRKZjej2RDB93m9Pm1Zq3W.svg)](https://asciinema.org/a/N7ZxRKZjej2RDB93m9Pm1Zq3W)
